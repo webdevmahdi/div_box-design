@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: url(assets/Image/coursor.PNG), pointer;
+}
+
+body{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.squre{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squre span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation:  animate 6s linear infinite;
+}
+
+.squre:hover span:nth-child(1){
+    border: none;
+    background: rgba(0, 0, 255, 0.8);
+}
+
+.squre span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation:  animate 4s linear infinite;
+}
+
+.squre:hover span:nth-child(2){
+    border: none;
+    background: rgba(0, 0, 255, 0.8);
+}
+
+.squre span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation:  animate2 10s linear infinite;
+}
+
+.squre:hover span:nth-child(3){
+    border: none;
+    background: rgba(0, 0, 255, 0.8);
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.continer{
+    position: relative;
+    padding: 40px 60px;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.continer a{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600px;
+    border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+.continer a:hover{
+    background: #fff;
+    color: black;
+    transition: 0.5s;
+} 
+/* This is for text typing animation */
+.text_animation{
+	width: 0ch;
+    color: rgb(124, 202, 22);
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 40px;
+	animation: animation 7s steps(37) infinite alternate;
+	border-right: 3px solid rgb(221, 138, 12);
+}
+
+.text_animation p{
+    position: relative;
+    top: 0%;
+    left: 0%;
+
+}
+
+@keyframes animation{
+	0%{
+		width: 0ch;
+	}
+	50%{
+		width: 37ch;
+	}
+
+}
+.coursor{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+ 
+}
